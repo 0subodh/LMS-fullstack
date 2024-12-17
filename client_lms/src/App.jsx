@@ -1,7 +1,14 @@
+import { ToastContainer } from "react-toastify";
+import AppRoutes from "./routes/AppRoutes";
 import "./App.css";
 
 function App() {
-  return <h1>Library Management System</h1>;
+  return (
+    <>
+      <AppRoutes />
+      <ToastContainer />
+    </>
+  );
 }
 
 export default App;
