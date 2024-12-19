@@ -1,14 +1,17 @@
+import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 
-function DefaultLayout({ children }) {
+function DefaultLayout() {
   return (
     <div>
       {/* navbar */}
       <Header />
 
       {/* main body */}
-      <main className="main">{children}</main>
+      <main className="main">
+        <Outlet />
+      </main>
 
       {/* footer */}
       <Footer />
