@@ -3,10 +3,11 @@ import Footer from "./Footer";
 import Header from "./Header";
 import { Container, Row, Col } from "react-bootstrap";
 import Sidebar from "./Sidebar";
+import AuthRoute from "../auth/AuthRoute";
 
 function UserLayout() {
   return (
-    <div>
+    <AuthRoute>
       {/* navbar */}
       <Header />
 
@@ -32,7 +33,8 @@ function UserLayout() {
 
       {/* footer */}
       <Footer />
-    </div>
+    </AuthRoute>
   );
 }
+
 export default UserLayout;

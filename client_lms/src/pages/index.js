@@ -7,7 +7,7 @@ export { default as BookLandingPage } from "./books/BookLandingPage";
 export { default as EditBookPage } from "./books/EditBookPage";
 export { default as NewBookPage } from "./books/Books";
 export { default as Books } from "./books/Books";
-export { defaut as ReviewsPage } from "./reviews/ReviewsPage";
+export { default as ReviewsPage } from "./reviews/ReviewsPage";
 export { default as UserPage } from "./users/UserPage";
 export { default as Profile } from "./users/Profile";
 export { default as Borrow } from "./borrow/Borrow";

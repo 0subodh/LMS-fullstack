@@ -1,4 +1,12 @@
+import ReviewList from "./ReviewList";
+
 function ReviewsPage() {
-  return <div>ReviewsPage</div>;
+  return (
+    <div>
+      <h1>Reviews</h1>
+      <ReviewList />
+    </div>
+  );
 }
+
 export default ReviewsPage;
