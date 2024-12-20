@@ -1,7 +1,8 @@
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
-import dbConnect from "./config/dbConfig.js";
+import dbConnect from "./src/config/dbConfig.js";
+import authRoute from "./src/routes/authRoute.js";
 
 const app = express();
 const PORT = process.env.PORT || 8000;
@@ -12,6 +13,9 @@ app.use(morgan("dev"));
 
 // parse json data
 app.use(express.json());
+
+// app routes
+app.use("/api/v1/auth", authRoute);
 
 app.get("/", (req, res) => {
   res.json({
