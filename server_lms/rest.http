@@ -1,0 +1,6 @@
+@rootURL = http://localhost:8000/
+#API list
+
+
+### Check Server Status
+GET {{rootURL}}
